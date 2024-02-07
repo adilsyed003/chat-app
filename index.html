@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatsApp</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span class="header">
+          <h1>
+            <img
+              src="public/whatsapp.png"
+              height="42px"
+              width="42px"
+              class="head-img"
+            />
+            <span style="margin: 1px"> ChatsApp</span>
+          </h1>
+        </span>
+        <span class="user-img">
+          <h1>
+            <span style="margin: 0px 3px" id="user-name"> User</span
+            ><span
+              ><img src="public/user.png" height="30px" width="30px"
+            /></span></h1
+        ></span>
+      </header>
+
+      <div class="chat-container">
+        <!-- <div class="message right">hi how are you?</div>
+        <div class="message left"><b><span id="user-chat">user :</span></b> i am fine</div> -->
+      </div>
+      <div class="send-container">
+        <form action="#" id="form">
+          <input
+            type="text"
+            id="messageInp"
+            placeholder="Type a message"
+            autocomplete="off"
+          />
+          <button type="submit" id="send" class="btn">Send</button>
+      </div>
+    </div>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+  </body>
+</html>
